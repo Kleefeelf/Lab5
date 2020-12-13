@@ -44,7 +44,7 @@ public:
 	vector<Clothing> clothes;
 	Wardrobe() { }
 	int go_out();
-	int add_clothing(Clothing other);
+	int add_clothing(Clothing Other);
 	int sort_size();
 	~Wardrobe() {}
 };

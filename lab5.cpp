@@ -5,22 +5,22 @@ using namespace std;
 
 int main()
 {
-    Wardrobe closet;
-    Clothing shirt("shirt", "top wear", "Ukraine", "green", 68, SHIRT);
-    Clothing jeans("jeans", "clothes for your legs", "Ukraine", "green", 39, JEANS);
-    Clothing jacket("jacket", "top wear", "Ukraine", "green", 47, JACKET);
-    Clothing shirt2("shirt", "top wear", "Ukraine", "green", 68, SHIRT);
-    Clothing shoes("shoes", "clothes for your foot", "Ukraine", "green", 40, SHOES);
-    Clothing hat("hat", "head wear", "Ukraine", "green", 10, HAT);
+    Wardrobe Closet;
+    Clothing Shirt("shirt", "top wear", "Ukraine", "green", 68, SHIRT);
+    Clothing Jeans("jeans", "clothes for your legs", "Ukraine", "green", 39, JEANS);
+    Clothing Jacket("jacket", "top wear", "Ukraine", "green", 47, JACKET);
+    Clothing Shirt2("shirt", "top wear", "Ukraine", "green", 68, SHIRT);
+    Clothing Shoes("shoes", "clothes for your foot", "Ukraine", "green", 40, SHOES);
+    Clothing Hat("hat", "head wear", "Ukraine", "green", 10, HAT);
 
-    closet.add_clothing(shirt);
-    closet.add_clothing(jeans);
-    closet.add_clothing(jacket);
-    closet.add_clothing(shirt2);
-    closet.add_clothing(shoes);
-    closet.add_clothing(hat);
-    closet.sort_size();
-    closet.go_out();
+    Closet.add_clothing(Shirt);
+    Closet.add_clothing(Jeans);
+    Closet.add_clothing(Jacket);
+    Closet.add_clothing(Shirt2);
+    Closet.add_clothing(Shoes);
+    Closet.add_clothing(Hat);
+    Closet.sort_size();
+    Closet.go_out();
 
     return 0;
 
