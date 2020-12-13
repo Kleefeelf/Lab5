@@ -5,8 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n = 6;
-    Wardrobe clothes(n);
+    Wardrobe closet;
     Clothing shirt("shirt", "top wear", "Ukraine", "green", 68, SHIRT);
     Clothing jeans("jeans", "clothes for your legs", "Ukraine", "green", 39, JEANS);
     Clothing jacket("jacket", "top wear", "Ukraine", "green", 47, JACKET);
@@ -14,24 +13,15 @@ int main()
     Clothing shoes("shoes", "clothes for your foot", "Ukraine", "green", 40, SHOES);
     Clothing hat("hat", "head wear", "Ukraine", "green", 10, HAT);
 
-    clothes.add_clothing(shirt);
-    clothes.add_clothing(jeans);
-    clothes.add_clothing(jacket);
-    clothes.add_clothing(shoes);
-    clothes.add_clothing(hat);
+    closet.add_clothing(shirt);
+    closet.add_clothing(jeans);
+    closet.add_clothing(jacket);
+    closet.add_clothing(shirt2);
+    closet.add_clothing(shoes);
+    closet.add_clothing(hat);
+    closet.sort_size();
+    closet.go_out();
 
-    Clothing* wardrobe = clothes.getClothing();
-    
-    int a = goOut(wardrobe, n);
-
-    int sort2[] = { shirt.size, jeans.size, jacket.size, shoes.size, hat.size, shirt2.size };
-    sort(sort2, sort2 + n);
-    for (int i = 0; i < n; i++)
-    {
-        cout << sort2[i]<< " ";
-    }
     return 0;
 
 }
-
-
